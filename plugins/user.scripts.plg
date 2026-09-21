@@ -2,8 +2,8 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "user.scripts">
 <!ENTITY author    "Andrew Zawadzki">
-<!ENTITY version   "2025.06.21">
-<!ENTITY md5       "652ad83eb3369d1603a289f01b40307d">
+<!ENTITY version   "2026.09.21">
+<!ENTITY md5       "a4a3283514a437055fc692bd4f42c713">
 <!ENTITY launch    "Settings/Userscripts">
 <!ENTITY plugdir   "/usr/local/emhttp/plugins/&name;">
 <!ENTITY github    "Squidly271/user.scripts">
@@ -13,6 +13,10 @@
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" min="6.3.3" icon="file-text-o">
 
 <CHANGES>
+###2026.09.21
+- Alert notification when a script run fails; per-script opt-out via notifyOnFailure=false (#21)
+- Optional success notification per script: notifyOnSuccess=true sends a normal-severity Unraid notification on zero exit (#21)
+
 ###2025.06.21
 - Support User Scripts Enhanced Plugin
 

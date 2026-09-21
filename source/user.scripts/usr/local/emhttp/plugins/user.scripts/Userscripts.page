@@ -554,6 +554,8 @@ Additionally, scripts can contain inline variables which will modify the operati
 <b>foregroundOnly</b> Setting this to be true disallows background running (and scheduling) of the script<br>
 <b>backgroundOnly</b> Setting this to be true disallows foreground running of the script<br>
 <b>arrayStarted</b> Setting this to be true will only run the script (foreground or background or scheduled) if the array is up and running<br>
+<b>notifyOnFailure</b> Setting this to be false will suppress the Unraid notification when the script exits with a non-zero exit code.  Default is true (notify)<br>
+<b>notifyOnSuccess</b> Setting this to be true will send an Unraid notification when the script exits with a zero exit code.  Default is false (do not notify)<br>
 <b>name</b> this is the name of the script.  Without this variable, the GUI will display the folder's name<br>
 <b>argumentDescription</b> if present this will bring up a pop up asking the user for the argument list for the script.  Note that currently arguments do not accept spaces contained within one argument (ie: quoting and escaping spaces does NOT work)<br>
 <b>argumentDefault</b> this is the default arguments for the above<br>
@@ -563,6 +565,8 @@ Additionally, scripts can contain inline variables which will modify the operati
 &#35;foregroundOnly=true<br>
 &#35;backgroundOnly=true<br>
 &#35;arrayStarted=true<br>
+&#35;notifyOnFailure=false<br>
+&#35;notifyOnSuccess=true<br>
 &#35;name=blah blah blah<br>
 &#35;argumentDescription=This is the description of the argument(s)<br>
 &#35;argumentDefault=defaultArg1 defaultArg2 etc<br></font>

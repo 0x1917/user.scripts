@@ -58,7 +58,7 @@ function getRawVariables($filename) {
 }
 
 function getScriptVariables($filename) {
-	$booleans = ['foregroundOnly','backgroundOnly','arrayStarted','clearLog','noParity','directPHP'];
+	$booleans = ['foregroundOnly','backgroundOnly','arrayStarted','clearLog','noParity','directPHP','notifyOnFailure','notifyOnSuccess'];
 	$vars = getRawVariables($filename);
 	
 	foreach (array_keys($vars) as $key) {
